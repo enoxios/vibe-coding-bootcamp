@@ -44,6 +44,28 @@ body {
   padding: 0.1em 0;
 }
 
+/* ── Maus-Tracking Glow ── */
+
+.mouse-glow {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 420px;
+  height: 420px;
+  margin: -210px 0 0 -210px;
+  border-radius: 50%;
+  pointer-events: none;
+  z-index: 0;
+  background: radial-gradient(
+    circle,
+    rgba(232, 80, 62, 0.18) 0%,
+    rgba(232, 80, 62, 0.08) 35%,
+    rgba(232, 80, 62, 0) 70%
+  );
+  will-change: transform;
+  transition: transform 0.08s ease-out;
+}
+
 /* ── Akzentlinie ── */
 
 .accent-bar {
